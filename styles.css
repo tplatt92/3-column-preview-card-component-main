@@ -20,6 +20,16 @@ body {
     border-radius: 15px;
 }
 
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .sedans {
 
     background-color: hsl(31, 77%, 52%);
@@ -45,9 +55,10 @@ body {
     font-weight: 400;
     font-size: 1rem;
     margin-bottom: 30px;
-    padding-right: 20px;
+    padding-right: 52px;
     line-height: 1.5rem;
 }
+
 
 h1,
 h2 {
@@ -58,52 +69,57 @@ h2 {
 
 }
 
-button {
-    padding: 15px;
+a {
+    padding: 10px 30px;
     border-radius: 30px;
-    width: 150px;
+    width: 100px;
     border: 1px solid transparent;
-    margin-bottom: 20px;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
 }
 
 img {
     margin-top: 15px;
 }
 
-.luxury button {
+.link-3 {
     color: hsl(179, 100%, 13%);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.suvs button {
+.link-2 {
     color: hsl(184, 100%, 22%);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.sedans button {
+.link-1 {
     color: hsl(31, 77%, 52%);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.luxury button:hover {
+.link-3:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(179, 100%, 13%);
     border: 2px solid hsl(0, 0%, 95%);
 
 }
 
-.suvs button:hover {
+.link-2:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(184, 100%, 22%);
     border: 2px solid hsl(0, 0%, 95%);
 
 }
 
-.sedans button:hover {
+.link-1:hover {
     color: hsl(0, 0%, 95%);
     background-color: hsl(31, 77%, 52%);
     border: 2px solid hsl(0, 0%, 95%);
 
+}
+
+.card-footer {
+    padding-bottom: 25px;
 }
 
 @media (min-width: 800px) {
